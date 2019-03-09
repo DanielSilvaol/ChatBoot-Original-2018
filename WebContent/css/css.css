@@ -1,0 +1,27 @@
+#scroll {
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 10%;
+  width:1000px;
+  height:500px;
+  background-color:#F2F2F2;
+  overflow:auto;
+    
+}
+body{
+    font-family: monospace;
+}
+.caja{
+    background: rgba(1,1,1,0.8);
+    color: white;
+    padding: 20px;
+    font-size: 1.3em;
+    height:200px;
+      width:750px;
+
+
+}
+legend{
+
+    text-align: center;
+}

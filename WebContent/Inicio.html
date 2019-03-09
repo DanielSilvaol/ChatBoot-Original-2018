@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bem-Vindo</title>
+
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/cartorio-de-notas.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+<div class="page-container">
+
+        <div class="page-back">
+
+
+        </div>
+    </div>
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="home.html"><a href="#menu-toggle" class="btn btn-secondary p1" id="menu-toggle">Cartório</a></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="page-scroll">
+                    <a href="index.html">Cadastrar-se</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="wrapper">
+
+
+
+
+
+        <h1>Cartorio</h1>
+        <button class="accordion" type="button">Registro Civil de Pessoas Naturais</button>
+        <div class="painel">
+            <p>Portal destinado aos Cartórios de Registro Civil das Pessoas Naturais para acesso a CRC que é o Portal Oficial dos Cartórios de Registro Civil das Pessoas Naturais, instituída pelo Provimento no 46 do Conselho Nacional de Justiça (CNJ), e que congrega toda a base de dados de nascimentos, casamentos, óbitos, emancipações, ausências e interdições, permitindo a localização de assentos em tempo real e a solicitação de certidões eletrônicas e digitais entre cartórios e entre cartórios e Poder Judiciário, além de uma série de outras funcionalidades listadas abaixo.</p>
+        </div>
+        <button class="accordion" type="button">Registro Civil de Pessoa Jurídica</button>
+        <div class="painel">
+            <p>O Cartório de Registro Civil de Pessoas Jurídicas é responsável pelo registro dos atos constitutivos, estatutos e suas respectivas alterações, das sociedades civis, como: ONGs, sindicatos, associações, e empresas de prestação de serviços;
+                Assim como o Registro Civil das Pessoas Naturais, o Registro Civil de pessoas Jurídicas se responsabiliza por documentações que abrangem firmas comerciais no registro de empresa com ou sem fins comerciais.
+                Como:
+                – Registro de associações e fundações (Lei nº 6.015, art. 114, I), de sociedades simples (Código Civil, art. 1.150) e de Cooperativas (Código Civil, art. 982, & único).
+                – Matrícula de jornais, periódicos, oficinas impressoras, empresas de radiodifusão e agências de notícias (Lei nº 6.015, art. 114, & único).
+                – Averbações de todas as alterações que irão constar no ato constitutivo – atas, alterações contratuais etc., (Código Civil, art. 45, caput).</p>
+        </div>
+        <button class="accordion" type="button">Registro de Imóveis</button>
+        <div class="painel">
+            <p>Passada a fase de busca, possíveis financiamentos, verificação de disponibilidade e elaboração de contratos iniciais, é chegada a hora de formalizar o negócio de compra e venda firmado, afinal, só é dono aquele que registra o bem.
+                O registro do negócio na matrícula do imóvel (aquele documento que registra todos os eventos e mudanças ocorridas em torno de sua propriedade ou posse) é feito no respectivo Cartório de Imóveis, sendo o principal instrumento apto a comprovar juridicamente que quem é o dono de um bem imóvel.</p>
+
+        </div>
+        <button class="accordion" type="button">Registro de Título e Documentos</button>
+        <div class="painel">
+            <p>O Cartório de Registro de Títulos e Documentos possui a atribuição de registrar documentos diversos, além de possuir a função de praticar registros de atos não atribuídos às demais naturezas de cartórios extrajudiciais: Cartório de Registro de Imóveis, Cartório de Registro Civil, Cartório de Notas, Cartório de Protesto, Cartório Distribuidor de Protesto.
+                São executados atos de registrar:<br/>
+                - Instrumentos particulares, para a prova das obrigações convencionais de qualquer valor;<br/>
+                - Penhor comum sobre coisas móveis;<br/>
+                - Caução de títulos de crédito pessoal e da dívida pública federal, estadual ou municipal, ou de Bolsa ao portador;<br/>
+                - Contrato de parceria agrícola ou pecuária;<br/>
+                - Mandado judicial de renovação do contrato de arrendamento para sua vigência quer entre as partes contratantes, quer em face de terceiros;<br/>
+                - Notificações extrajudiciais;<br/>
+                - Quaisquer documentos para sua conservação;<br/>
+                - Cartas de fiança;<br/>
+                - Quitações e recibos;<br/>
+                - Atos administrativos expedidos para cumprimento de decisões judiciais;<br/>
+                - Contratos em geral;<br/>
+                - Expedição de certidões relativa aos atos registrados;<br/>
+            </p>
+        </div>
+    </div>
+
+
+<div class="welcome-section content-hidden">
+    <div class="content-wrap">
+        <ul class="fly-in-text">
+            <li>B</li>
+            <li>E</li>
+            <li>M</li>
+            <li>-</li>
+            <li>V</li>
+            <li>I</li>
+            <li>N</li>
+            <li>D</li>
+            <li>O</li>
+        </ul>
+        <a href="#" class="enter-button">ENTRE</a>
+
+    </div>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for(i=0;i<acc.length;i++){
+        acc[i].onclick=function(){
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if(panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            }
+            else{
+                panel.style.maxHeight = panel.scrollHeight+"px";
+            }
+        }
+    }
+</script>
+<script type="text/javascript">
+$(window).on('scroll',function () {
+    if($(window).scrollTop()){
+        $('nav').addClass('black');
+    }
+    else{
+        $('nav').addClass('black');
+    }
+})
+
+
+
+    var windowWidth = $(window).width(),
+        windowHeight= $(window).height();
+
+   $('.page-container').mousemove(function (event) {
+
+       var moveX= ((windowWidth / 2) - event.pageX)*0.1;
+       var moveY= ((windowHeight / 2) - event.pageY)*0.1;
+
+       $(".page-back").css('margin-left',moveX+'px');
+
+       $('.page-back').css('margin-top',moveY+'px');
+   });
+
+
+    $(function(){
+        var welcomeSection = $('.welcome-section'),
+            enterButton = welcomeSection.find('.enter-button');
+
+        setTimeout(function (){
+            welcomeSection.removeClass('content-hidden')
+        },800);
+
+        enterButton.on('click',function (e){
+            e.preventDefault();
+            welcomeSection.addClass('content-hidden').fadeOut();
+
+
+        })
+    });
+
+</script>
+
+</body>
+</html>
